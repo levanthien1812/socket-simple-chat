@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+      integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div style="width: 50%; margin: 0 auto">
+      <div
+        id="messages-div"
+        style="padding: 10px; border: 1px solid black"
+      ></div>
+      <form
+        id="send-message-form"
+        style="margin-top: 10px; display: flex; gap: 10px"
+      >
+        <input
+          type="text"
+          name="message-input"
+          id="message-input"
+          placeholder="Type message"
+          style="border: 1px solid black; outline: none"
+        />
+        <button style="border-radius: 0; border: 1px solid black" type="submit">
+          Send
+        </button>
+      </form>
+
+      <form
+        id="join-room-form"
+        style="margin-top: 10px; display: flex; gap: 10px"
+      >
+        <input
+          type="text"
+          name="room-input"
+          id="room-input"
+          placeholder="Type room"
+          style="border: 1px solid black; outline: none"
+        />
+        <button style="border-radius: 0; border: 1px solid black" type="submit">
+          Join
+        </button>
+      </form>
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
